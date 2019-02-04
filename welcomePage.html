@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: Arial;
+        color: white;
+      }
+      
+      .split {
+        height: 20%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        /* overflow-x: hidden; */
+        padding-top: 20px;
+      }
+      
+      .left {
+        left: 0;
+        background-color: #111;
+      }
+      
+      /* .right {
+        right: 0;
+        background-color: red;
+      } */
+      
+      .centered {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        /* transform: translate(-50%, -50%);
+        text-align: left; */
+      }
+      .tabs {
+        position: absolute;
+        top : 80%;
+        right: 0%;
+      }
+      
+      .centered img {
+        width: 150px;
+        border-radius: 50%;
+      }
+      .column {
+      float: left;
+      width: 50%;
+    }
+
+/* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;  
+  }
+      </style>
+  </head>
+  <body>
+
+    <div class="split left">
+      <div class="centered">
+        <!-- <img src="img_avatar2.png" alt="Avatar woman"> -->
+        <!-- <h2>Jane Flex</h2> -->
+        <font size="5">The Artifact</font>
+        <p >Culture & Art Blog</p>
+      </div>
+      <div class = "tabs">
+        <p>Blog &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; About &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Contact &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
+      </div> 
+    </div>
+
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <img src="./Images/abstract.png" alt="Avatar woman">
+            <p>Some text..</p>
+          </div>
+          <div class="column" style="background-color:#bbb;">
+            <h2>Column 2</h2>
+            <p>Some text..</p>
+          </div>
+          <div class="column" style="background-color:#ccc;">
+            <h2>Column 3</h2>
+            <p>Some text..</p>
+          </div>
+          <div class="column" style="background-color:#ddd;">
+            <h2>Column 4</h2>
+            <p>Some text..</p>
+          </div>
+      </div>
+  
+      <!-- <frameset cols="*">
+         <frame src="/Users/Pulkit_Agarwal-BNG/Assignments/frontend-exercise-assets/welcomePage.html">
+      </frameset> -->
+  
+    
+    <!-- <div class="split right">
+      <div class="centered">
+        <img src="img_avatar.png" alt="Avatar man">
+        <h2>John Doe</h2>
+        <p>Some text here too.</p>
+      </div>
+    </div> -->
+         
+    <!-- </body>
+</html> -->
